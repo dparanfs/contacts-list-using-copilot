@@ -3,8 +3,24 @@ import apiClient from './api-client';
 
 // create contacts api with crud methods
 // add types to the crud methods
-export const getContacts = async (signal: AbortSignal): Promise<Contact[]> => {
-  const response = await apiClient.get('/contacts', { signal });
+export const getContacts = async (
+  { name }: { name?: string },
+  signal: AbortSignal
+): Promise<Contact[]> => {
+  if (name) {
+    const response = await apiClient.get('/contacts', {
+      signal,
+      params: {
+        name,
+      },
+    });
+
+    return response.data;
+  }
+  const response = await apiClient.get('/contacts', {
+    signal,
+  });
+
   return response.data;
 };
 

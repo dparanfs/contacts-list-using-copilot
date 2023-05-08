@@ -13,13 +13,17 @@ const ContactList = (): React.ReactElement => {
 
   // create a state for contacts
   const [contacts, setContacts] = useState<Contact[]>([]);
+
+  // create a state for search input
+  const [search, setSearch] = useState('');
+
   // create a useEffect for fetching contacts with abort controller
   useEffect(() => {
     const abortController = new AbortController();
     const signal = abortController.signal;
 
     const fetchContacts = async () => {
-      const contacts = await contactsApi.getContacts(signal);
+      const contacts = await contactsApi.getContacts({ name: search }, signal);
       setContacts(contacts);
     };
 
@@ -28,7 +32,12 @@ const ContactList = (): React.ReactElement => {
     return () => {
       abortController.abort();
     };
-  }, []);
+  }, [search]);
+
+  // create onChange handler for search input
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearch(event.target.value);
+  };
 
   // create a delete handler for deleting contact
   const handleDelete = async (id: number) => {
@@ -51,6 +60,14 @@ const ContactList = (): React.ReactElement => {
           Create New Contact
         </button>
       </Link>
+      <br />
+      {/* search input */}
+      <input
+        className="contact-list-search"
+        type="text"
+        placeholder="Search for name (case sensitive)"
+        onChange={handleSearchChange}
+      />
       <ul className="contact-list">
         {contacts.map((contact) => (
           <li key={contact.id} className="contact-list-item">

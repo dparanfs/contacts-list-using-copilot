@@ -10,4 +10,8 @@ npm install
 npm run dev
 ```
 
+## search
+
+### search is case sensitive
+
 ---
