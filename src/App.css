@@ -1,0 +1,184 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* create a form component style */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+  padding: 2em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form input {
+  width: 100%;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form button {
+  width: 100%;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #61dafb;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #fff;
+  color: #61dafb;
+}
+
+.form button:disabled {
+  background-color: #ccc;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.form button:disabled:hover {
+  background-color: #ccc;
+  color: #fff;
+}
+
+.form .error {
+  color: red;
+  font-size: 0.8em;
+  margin: 0.5em 0;
+}
+
+.form .success {
+  color: green;
+  font-size: 0.8em;
+  margin: 0.5em 0;
+}
+
+.form .loading {
+  color: #61dafb;
+  font-size: 0.8em;
+  margin: 0.5em 0;
+}
+
+.form .loading::after {
+  content: '...';
+  animation: loading 1s infinite;
+}
+
+@keyframes loading {
+  from {
+    content: '...';
+  }
+  to {
+    content: '';
+  }
+}
+
+/* contact list page header title */
+.contact-list-header {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+/* contact list create new contact button */
+.contact-list-create {
+  background-color: #61dafb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+/* contact list style with 70% width */
+.contact-list {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* contact list item style */
+.contact-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0.5em 0;
+}
+
+.contact-list-item .name {
+  font-weight: bold;
+}
+
+.contact-list-item .email {
+  color: #888;
+}
+
+/* contact list phone, and address */
+.contact-list-item .phone,
+.contact-list-item .address {
+  color: #888;
+}
+
+.contact-list-item .delete {
+  background-color: #61dafb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.contact-list-item .delete:hover {
+  background-color: #fff;
+  color: #61dafb;
+}

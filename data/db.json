@@ -1,0 +1,88 @@
+{
+  "contacts": [
+    {
+      "name": "John Smith",
+      "email": "john.smith@example.com",
+      "phone": "+1-555-123-4567",
+      "address": "123 Main St, Anytown USA",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "email": "jane.doe@example.com",
+      "address": "456 Oak Ave, Anytown USA",
+      "phone": "+1-555-234-5678"
+    },
+    {
+      "id": 3,
+      "name": "Bob Johnson",
+      "email": "bob.johnson@example.com",
+      "address": "789 Maple Rd, Anytown USA",
+      "phone": "+1-555-345-6789"
+    },
+    {
+      "id": 4,
+      "name": "Emily Jones",
+      "email": "emily.jones@example.com",
+      "address": "321 Elm St, Anytown USA",
+      "phone": "+1-555-456-7890"
+    },
+    {
+      "id": 5,
+      "name": "David Lee",
+      "email": "david.lee@example.com",
+      "address": "654 Pine Ave, Anytown USA",
+      "phone": "+1-555-567-8901"
+    },
+    {
+      "id": 6,
+      "name": "Sarah Brown",
+      "email": "sarah.brown@example.com",
+      "address": "987 Cedar Blvd, Anytown USA",
+      "phone": "+1-555-678-9012"
+    },
+    {
+      "id": 7,
+      "name": "Michael Davis",
+      "email": "michael.davis@example.com",
+      "address": "246 Oak St, Anytown USA",
+      "phone": "+1-555-789-0123"
+    },
+    {
+      "id": 8,
+      "name": "Lisa Wilson",
+      "email": "lisa.wilson@example.com",
+      "address": "135 Walnut Ave, Anytown USA",
+      "phone": "+1-555-890-1234"
+    },
+    {
+      "id": 9,
+      "name": "Daniel Kim",
+      "email": "daniel.kim@example.com",
+      "address": "864 Birch Rd, Anytown USA",
+      "phone": "+1-555-901-2345"
+    },
+    {
+      "id": 10,
+      "name": "Karen Brown",
+      "email": "karen.brown@example.com",
+      "address": "753 Pine St, Anytown USA",
+      "phone": "+1-555-012-3456"
+    },
+    {
+      "name": "new 1 - modified",
+      "email": "new1@test.com",
+      "phone": "12345",
+      "address": "abc",
+      "id": 11
+    },
+    {
+      "name": "new con",
+      "email": "newcon@test.com",
+      "phone": "123456",
+      "address": "abc",
+      "id": 12
+    }
+  ]
+}
