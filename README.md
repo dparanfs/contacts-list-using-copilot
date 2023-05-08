@@ -10,8 +10,8 @@ npm install
 npm run dev
 ```
 
-## search
+### Currently only runs locally using `npm run dev`
 
-### search is case sensitive
+- it will concurrently start `json-server` and the `react app` with vite
 
 ---
